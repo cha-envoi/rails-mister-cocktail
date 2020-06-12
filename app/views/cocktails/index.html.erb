@@ -1,7 +1,24 @@
-<h1>Cocktails list</h1>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
 
-<% @cocktails.each do |cocktail| %>
-  <%= link_to cocktail.name, cocktail_path(cocktail.id) %>
-<% end %>
-</br>
-<%= link_to "Add new cocktail", new_cocktail_path %>
+    <! --- CSS --- >
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+
+  <h1>
+      Cocktails list
+    </h1>
+
+  <% @cocktails.each do |cocktail| %>
+    <%= link_to cocktail.name, cocktail_path(cocktail.id) %>
+  <% end %>
+  </br>
+  <%= link_to "Add new cocktail", new_cocktail_path %>
+
+  </body>
+</html>
